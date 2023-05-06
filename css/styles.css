@@ -198,10 +198,12 @@ body {
   | HERO (SECTION 1)
   |============================
 */
-/* адптивка для хіро мобайл */
+/* адптивка 1 СЕЦІЯ МОБІЛЬНИЙ */
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 428px) {
   .container {
@@ -220,8 +222,8 @@ body {
     margin-left: 54px;
   }
 }
-/* адаптивка для хіро планшет */
-@media screen and (min-width: 768px) {
+/* адаптивка 1 СЕКЦІЯ ПЛАНШЕТ */
+/* @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -231,9 +233,58 @@ body {
     margin-right: 136px;
     margin-left: 136px;
   }
+} */
+/* адаптивка 2 секція МОБІЛЬНИЙ */
+@media screen and (max-width: 1157px) {
+  .advanteges-icons-item {
+    display: none;
+  }
+  .advanteges-icons {
+    display: none;
+  }
 }
-/* адаптивка для пк */
-@media screen and (min-width: 1158px) {
+@media screen and (max-width: 767px) {
+  .advanteges-main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+  .advanteges-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1, 1;
+    text-align: center;
+  }
+  .list-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+/* адаптивка 3 секція МОБІЛЬНИЙ */
+@media screen and (max-width: 767px) {
+  .members-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+  }
+  .section-team-header {
+    margin-top: 96px;
+  }
+}
+
+/* адаптивка 2 секція ПЛАНШЕТ */
+/* @media screen and (min-width: 768px) {
+  .advanteges-main-list {
+    display: flex;
+    row-gap: 24px;
+    column-gap: 72px;
+  }
+} */
+
+/* адаптивка 1 секція ПК */
+/* @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
   }
@@ -243,7 +294,7 @@ body {
     margin-right: 472px;
     margin-left: 472px;
   }
-}
+} */
 /* кінець адптивки */
 .hero {
   background-color: #2e2f42;
@@ -304,18 +355,18 @@ body {
   gap: 24px;
   border-radius: 4px;
   margin-bottom: 8px;
-}
-.advanteges {
+} */
+/* .advanteges {
   padding: 120px 0;
-}
-.advanteges-main-list {
+} */
+/* .advanteges-main-list {
   display: flex;
   gap: 24px;
-}
-.advanteges-item {
+} */
+/* .advanteges-item {
   width: calc((100% - 72px) / 4);
-}
-.advanteges-list {
+} */
+/* .advanteges-list {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -323,8 +374,8 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-}
-.list-text {
+} */
+/* .list-text {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -369,7 +420,7 @@ body {
 /* .section-team {
   background-color: #f4f4fd;
   padding: 120px 0;
-}
+} */
 .section-team-header {
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -381,10 +432,10 @@ body {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.members-list {
+/* .members-list {
   display: flex;
   gap: 24px;
-}
+} */
 .our-team-list {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
@@ -439,7 +490,7 @@ body {
 }
 .cocial-list-icon {
   fill: var(--background);
-} */
+}
 /**
   |============================
   | CUSTOMERS (SECTION 5)
