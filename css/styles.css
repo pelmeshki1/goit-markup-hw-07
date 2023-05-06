@@ -16,13 +16,13 @@
   | RESET
   |============================
 */
-/* h1,
+h1,
 h2,
 h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
-} */
+}
 ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -254,7 +254,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 .section-hero {
   font-family: Roboto, sans-serif;
@@ -265,7 +265,7 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   /* margin-bottom: 48px; */
 }
 .btn {
@@ -282,7 +282,7 @@ body {
   min-height: 56px;
   border: none;
   border-radius: 4px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
@@ -294,7 +294,7 @@ body {
   | COMPANY ADVANTAGES (SECTION 2)
   |============================
 */
-.advanteges-icons-item {
+/* .advanteges-icons-item {
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
@@ -331,14 +331,14 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
-}
+} */
 /**
   |============================
   | WHAT ARE WE DOING (SECTION 3)
   |============================
 */
 /* blocks section 3 */
-.what-are-we-doing {
+/* .what-are-we-doing {
   padding-bottom: 120px;
 }
 .header-text {
@@ -358,7 +358,7 @@ body {
 }
 .we-doing-list-item {
   width: calc((100% - 48px) / 3);
-}
+} */
 
 /**
   |============================
@@ -366,7 +366,7 @@ body {
   |============================
 */
 
-.section-team {
+/* .section-team {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
@@ -439,13 +439,13 @@ body {
 }
 .cocial-list-icon {
   fill: var(--background);
-}
+} */
 /**
   |============================
   | CUSTOMERS (SECTION 5)
   |============================
 */
-.customers {
+/* .customers {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -488,13 +488,13 @@ body {
 }
 .customers-list-icon {
   fill: currentColor;
-}
+} */
 /**
   |============================
   | FOOTER
   |============================
 */
-.footer {
+/* .footer {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -507,7 +507,7 @@ body {
   align-items: baseline;
 }
 /* logo footer */
-.logo-paragraf {
+/* .logo-paragraf {
   margin-right: 120px;
 }
 .social-contacts {
@@ -576,9 +576,9 @@ body {
 }
 .social-list-icon {
   fill: var(--background);
-}
+} */
 /* footer form */
-.footer-form-container {
+/* .footer-form-container {
 }
 .footer-subscribe-text {
   font-family: Roboto, sans-serif;
@@ -640,14 +640,14 @@ body {
 input[type='email']::placeholder {
   color: #ffffff;
   opacity: 1;
-}
+} */
 
 /**
   |============================
   | MODAL WINDOW
   |============================
 */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -818,7 +818,7 @@ input[type='email']::placeholder {
   color: var(--ocean);
 }
 /*  */
-.modal-form-agreement-box {
+/* .modal-form-agreement-box {
   appearance: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -834,7 +834,7 @@ input[type='email']::placeholder {
   outline-color: #404bbf;
   fill: #404bbf;
   color: #4d5ae5;
-}
+} */
 /*  */
 .modal-form-agreement-icon-unchecked {
   opacity: 1;
@@ -849,7 +849,7 @@ input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreem
   opacity: 1;
 }
 /* для чекбоксу */
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -866,7 +866,7 @@ input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreem
   outline: 2px solid var(--ocean);
   outline-offset: -1px;
   border-radius: 2px;
-}
+} */
 /**
   |============================
   | PORTFOLIO
