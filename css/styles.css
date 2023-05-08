@@ -9,6 +9,7 @@
   --color-btn: #e7e9fc;
   --color-icon-gray: #8e8f99;
   --color-modal: #2e2f4266;
+  --color-icon-green: #31d0aa;
 }
 
 /**
@@ -49,7 +50,7 @@ ul {
   |============================
 */
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #434455;
   background-color: #ffffff;
@@ -105,7 +106,7 @@ body {
   margin-right: auto;
 }
 .header-logo {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -114,7 +115,7 @@ body {
   color: var(--iris);
 }
 .accent-header-logo {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -188,7 +189,7 @@ body {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.04em;
-    color: var(--secondary-text-clr);
+    color: var(--premium-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .address-link:hover,
@@ -235,7 +236,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--secondary-text-clr);
+    color: var(--premium-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -266,7 +267,7 @@ body {
   margin-left: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -294,7 +295,7 @@ body {
   margin-right: auto;
 }
 .section-hero {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -386,7 +387,7 @@ body {
   }
 
   .advanteges-list {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -407,45 +408,6 @@ body {
     fill: currentColor;
   }
 }
-
-/* .advanteges-icons-item {
-  width: 264px;
-  height: 112px;
-  background-color: #f4f4fd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  border-radius: 4px;
-  margin-bottom: 8px;
-} */
-/* .advanteges {
-  padding: 120px 0;
-} */
-/* .advanteges-main-list {
-  display: flex;
-  gap: 24px;
-} */
-/* .advanteges-item {
-  width: calc((100% - 72px) / 4);
-} */
-/* .advanteges-list {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-} */
-/* .list-text {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: #434455;
-} */
 /**
   |============================
   | WHAT ARE WE DOING (SECTION 3)
@@ -684,7 +646,7 @@ body {
   display: block;
   padding-top: 96px;
   padding-bottom: 96px;
-  background-color: var(--secondary-color);
+  background-color: var(--navi-blue);
 }
 .container-footer {
   display: flex;
@@ -692,16 +654,16 @@ body {
   gap: 72px 0;
 }
 .footer-logo {
-  display: block;
-  margin-bottom: 16px;
-  text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--logo-one-clr);
+  color: var(--iris);
+  text-align: center;
+  display: block;
+  margin-bottom: 16px;
 }
 .accent-footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -710,14 +672,16 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--third-color);
+  color: var(--background);
 }
 .footer-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--third-color);
+  color: var(--background);
 }
 .social-contacts {
   align-items: baseline;
@@ -725,12 +689,13 @@ body {
 }
 
 .social-media-text {
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--white-color);
+  color: var(--light-txt-color);
 }
 .social-media-link {
   display: flex;
@@ -743,18 +708,81 @@ body {
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: var(--fotter-icons-color);
+  background-color: var(--iris);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--footer-icons--hover-color);
+  background-color: var(--color-icon-green);
 }
 
 .social-list-icon {
-  fill: var(--icon-color);
+  fill: var(--background);
+}
+
+/* subsribe form */
+.footer-subscribe-text {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-txt-color);
+  margin-bottom: 16px;
+}
+.subscribe-btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  min-width: 165px;
+  min-height: 40px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  gap: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn:hover {
+  background-color: #404bbf;
+}
+
+.footer-form-wrapper {
+  display: flex;
+}
+.footer-field-input {
+  box-sizing: border-box;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  display: flex;
+  border: 1px solid var(--light-txt-color);
+  filter: drop-shadow(0px 4px 4px rgba (0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--navi-blue);
+  fill: var(--light-txt-color);
+  color: var(--light-txt-color);
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+input[type='email']::placeholder {
+  color: #ffffff;
+  opacity: 1;
 }
 /* delete code */
 
@@ -1204,8 +1232,7 @@ body {
   fill: var(--background);
 } */
 /* footer form */
-/* .footer-form-container {
-}
+
 .footer-subscribe-text {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -1266,7 +1293,7 @@ body {
 input[type='email']::placeholder {
   color: #ffffff;
   opacity: 1;
-} */
+}
 
 /**
   |============================
