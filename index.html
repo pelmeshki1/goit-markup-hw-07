@@ -426,7 +426,7 @@
         </div>
       </div>
     </footer>
-    <!-- Modal window -->
+    <!-- Modal window 1 -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -435,8 +435,8 @@
           </svg>
         </button>
         <!-- Modal form -->
-        <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="contact_form">
+          <p class="modal-text">Leave your contacts and we will call you back</p>
           <label class="modal-form-label" for="user_name">Name</label>
           <div class="modal-form-field">
             <input
@@ -479,15 +479,10 @@
             id="comment_user"
             class="modal-form-message"
             name="user_message"
-            rows="5"
             placeholder="Text input"
           ></textarea>
           <label class="modal-form-agreement">
-            <input
-              class="modal-form-agreement-box visually-hidden"
-              name="user_agreement"
-              type="checkbox"
-            />
+            <input class="modal-form-agreement-box" name="user_agreement" type="checkbox" />
             <svg class="modal-form-agreement-icon" width="16" height="16">
               <use
                 class="modal-form-agreement-icon-unchecked"
@@ -508,50 +503,125 @@
         </form>
       </div>
     </div>
-    <!-- MODAL MENU -->
+    <!-- MODAL MENU 2 -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu" type="button" data-modal-close>
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+      <button class="menu-close-modal js-close-menu" type="button" data-modal-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp21"></use>
         </svg>
       </button>
+
       <ul class="mobile-menu list">
-        <li><a href="./index.html" class="link">Studio</a></li>
-        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Contacts</a></li>
+        <li>
+          <a href="./index.html" class="link active menu-contacts">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="link menu-contacts">Portfolio</a>
+        </li>
+        <li><a href="" class="link menu-contacts">Contacts</a></li>
       </ul>
-      <address class="address-mail-phone-menuphone">
-        <ul class="link list list-address-menuphone">
-          <li class="phone-menuphone"
-            ><a href="tel:+110001111111" class="address-link-menuphone link"
-              >+11 (000) 111-11-11</a
-            ></li
+
+      <ul class="mobile-contacts list">
+        <li class="tel-modal-menu">
+          <a class="contacts-menu link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a class="contacts-menu-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="social-media-link list">
+        <li class="social-media-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- <ul class="mobile-social list">
+        <li class="footer-icon-media">
+          <a
+            class="footer-link link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="nooperer noreferrer"
+            aria-label="Instagram icon"
           >
-          <li class="mail-menuphone"
-            ><a href="mailto:info@devstudio.com" class="address-link-menuphone link"
-              >info@devstudio.com</a
-            ></li
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-media">
+          <a
+            class="footer-link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="nooperer noreferrer"
+            aria-label="Twitter icon"
           >
-        </ul>
-      </address>
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-media">
+          <a
+            class="footer-link link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="nooperer noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-media">
+          <a
+            class="footer-link link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="nooperer noreferrer"
+            aria-label="Linkedin icon"
+          >
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul> -->
     </div>
+    <script src="./js/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
