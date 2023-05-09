@@ -52,18 +52,8 @@
           </ul>
         </address>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg
-            width="32"
-            height="22"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
       </div>
@@ -138,13 +128,34 @@
           <h2 class="header-text">What are we doing</h2>
           <ul class="list we-doing-list">
             <li class="we-doing-list-item">
-              <img src="./images/monitor.jpg" alt="Monitor" width="360" height="300" />
+              <img
+                srcset="./images/wedoing/desctop_@2x.jpg 2x, ./images/wedoing/desctop_@1x.jpg 1x"
+                src="./images/wedoing/desctop_@1x.jpg"
+                alt="Monitor"
+                width="360"
+                height="300"
+              />
             </li>
             <li class="we-doing-list-item">
-              <img src="./images/telephone.jpg" alt="Telephone menu" width="360" height="300" />
+              <img
+                srcset="./images/wedoing/menu_@2x.jpg 2x, ./images/wedoing/menu_@1x.jpg 1x"
+                src="./images/wedoing/menu_@1x.jpg"
+                alt="Telephone menu"
+                width="360"
+                height="300"
+              />
             </li>
             <li class="we-doing-list-item">
-              <img src="./images/telephonelaptop.jpg" alt="Mobilephone" width="360" height="300" />
+              <img
+                srcset="
+                  ./images/wedoing/mobilehand_@2x.jpg 2x,
+                  ./images/wedoing/mobilehand_@1x.jpg 1x
+                "
+                src="./images/wedoing/mobilehand_@1x.jpg"
+                alt="Mobilephone"
+                width="360"
+                height="300"
+              />
             </li>
           </ul>
         </div>
@@ -155,7 +166,13 @@
           <h2 class="section-team-header">Our Team</h2>
           <ul class="list members-list">
             <li class="our-team-list">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260" />
+              <img
+                srcset="./images/team/Mark_@1x.jpg 1x, ./images/team/Mark_@2x.jpg 2x"
+                src="./images/team/Mark_@1x.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+              />
               <div class="container-team">
                 <h3 class="name-person">Mark Guerrero</h3>
                 <p class="worker">Product Designer</p>
@@ -192,7 +209,13 @@
               </div>
             </li>
             <li class="our-team-list">
-              <img src="./images/tom.jpg" alt="Tom Ford" width="264" height="260" />
+              <img
+                srcset="./images/team/Tom_@1x.jpg 1x, ./images/team/Tom_@2x.jpg 2x"
+                src="./images/team/Tom_@1x.jpg"
+                alt="Tom Ford"
+                width="264"
+                height="260"
+              />
               <div class="container-team">
                 <h3 class="name-person">Tom Ford</h3>
                 <p class="worker">Frontend Developer</p>
@@ -229,7 +252,13 @@
               </div>
             </li>
             <li class="our-team-list">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" height="260" />
+              <img
+                srcset="./images/team/Camila_@1x.jpg 1x, ./images/team/Camila_@2x.jpg 2x"
+                src="./images/team/Camila_@1x.jpg"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+              />
               <div class="container-team">
                 <h3 class="name-person">Camila Garcia</h3>
                 <p class="worker">Marketing</p>
@@ -266,7 +295,13 @@
               </div>
             </li>
             <li class="our-team-list">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" height="260" />
+              <img
+                srcset="./images/team/Daniel_@1x.jpg 1x, ./images/team/Daniel_@2x.jpg 2x"
+                src="./images/team/Daniel_@1x.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+              />
               <div class="container-team">
                 <h3 class="name-person">Daniel Wilson</h3>
                 <p class="worker">UI Designer</p>

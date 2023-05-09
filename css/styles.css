@@ -248,6 +248,32 @@ body {
   |============================
 */
 /* MOBILE version */
+.hero {
+  background-color: var(--navi-blue);
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hiro/Dark-bg_MOB@1x.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-device-pixel-rario: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hiro/Dark-bg_MOB@2x.jpg);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-hero {
+    text-transform: capitalize;
+  }
+}
 .section-hero {
   margin-bottom: 72px;
   max-width: 320px;
@@ -259,6 +285,19 @@ body {
   text-align: center;
   color: var(--light-txt-color);
 }
+/* .section-hero {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
+} */
 .btn {
   display: block;
   min-width: 169px;
@@ -283,34 +322,13 @@ body {
   background-color: #404bbf;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 4px;
 }
-.hero {
-  background-color: var(--navi-blue);
-  padding-top: 188px;
-  padding-bottom: 188px;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/background.jpg);
-  max-width: 1440px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section-hero {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  max-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 72px;
-}
+
 /* TABLET version */
 @media only screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hiro/Dark-bg_TAB@1x.jpg);
+  }
   .section-hero {
     margin-bottom: 36px;
     max-width: 496px;
@@ -318,7 +336,35 @@ body {
     line-height: 1.07;
   }
 }
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hiro/Dark-bg_TAB@2x.jpg);
+  }
+}
 /* DESKTOP version */
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hiro/people-office_DESK@1x.jpg);
+  }
+  .section-hero {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  (min-resolution: 192dpi) and (min-width: 1158px),
+  (min-resolution: 2dppx) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hiro/people-office_DESK@2x.jpg);
+  }
+}
 @media only screen and (min-width: 1158px) {
   .section-hero {
     margin-bottom: 48px;
@@ -1122,7 +1168,6 @@ input[type='checkbox']:checked + .modal-form-agreement-icon > .modal-form-agreem
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-left: auto;
   padding: 0;
   background-color: transparent;
